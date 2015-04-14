@@ -16,7 +16,6 @@ class KalibrateRtl < Formula
   def install
     ENV.append_path "PKG_CONFIG_PATH", "#{Formula["fftw"].lib}/pkgconfig"
     ENV.append_path "PKG_CONFIG_PATH", "#{Formula["librtlsdr"].lib}/pkgconfig"
-    #print "#{ENV["PKG_CONFIG_PATH"]}\n"
 
     system "./bootstrap"
     system "./configure", "--prefix=#{prefix}"
