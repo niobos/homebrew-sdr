@@ -2,10 +2,7 @@ require "formula"
 
 class Gqrx < Formula
   homepage "http://gqrx.dk"
-  url "https://github.com/csete/gqrx/archive/v2.3.2.tar.gz"
-  sha1 "23680d9527aca135c2952ab17873ab716e379ac6"
-
-  head "https://github.com/csete/gqrx.git"
+  head "https://github.com/csete/gqrx.git", :revision => "0bbfd3832943739cbe4c3ee2642e4347c4b00753"
 
   depends_on 'pkg-config' => :build
   depends_on 'gnuradio'

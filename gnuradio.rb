@@ -8,7 +8,7 @@ class Gnuradio < Formula
 
   option "without-qt", "Build with QT widgets in addition to wxWidgets"
   option "without-docs", "Build gnuradio documentation"
-  option "with-brewed-python", "Use the Homebrew version of Python"
+  option "without-brewed-python", "Use the Homebrew version of Python"
 
   resource "docutils" do
     url "https://pypi.python.org/packages/source/d/docutils/docutils-0.12.tar.gz"
